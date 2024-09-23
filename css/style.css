@@ -1,0 +1,378 @@
+.pc{display: none;}
+.tab{display: none;}
+.m{display: block;}
+
+html{font-family: Pretendard;}
+
+#wrapper{}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+header .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px;
+}
+header .wrap h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+header .wrap h1 img{
+    width: 60px;
+}
+header .wrap .menu button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+header .wrap .menu button img{
+    width: 30px;
+}
+header .wrap .util{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
+header .wrap .util button{
+    font-size: 12px;
+    border: none;
+}
+header .wrap nav{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.2s;
+    z-index: 9;
+}
+header .wrap nav .navheader{
+    width: 100%;
+    height: 70px;
+    display: flex;
+}
+header .wrap nav .navheader .btn {
+    width: 15%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .wrap nav .navheader .btn .close{
+    border: none;
+}
+header .wrap nav .navheader .btn .close img{
+    width: 20px;
+}
+header .wrap nav .navheader .logo {
+    width: 75%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .wrap nav .navheader .logo img{
+    width: 60px;
+}
+header .wrap nav .navheader .search{
+    display: none;
+}
+header .wrap nav .gnb{
+    position: relative;
+    height: 100%;
+}
+header .wrap nav .gnb .menu{
+    width: 200px;
+}
+header .wrap nav .gnb .menu a{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+header .wrap nav .gnb .menu .submenu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: calc(100% - 70px);
+}
+header .wrap nav .gnb .util{
+    margin-top: 30px;
+}
+header .wrap nav .gnb .util div{
+    font-size: 20px;
+    padding: 10px 20px;
+}
+header .wrap nav .gnb .util div:hover{
+    background-color: #000;
+    color: #fff;
+}
+.slide{   
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+.slide .wrap .mainSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.slide .wrap .mainSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+.slide .wrap .text{
+    font-size: 0;
+}
+.slide .wrap .desktext{
+    font-size: 0;
+}
+.slide .wrap .slidetext1{
+    color: #fff;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    z-index: 999;
+    text-wrap: nowrap;
+}
+.slide .slidetext2{
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    z-index: 999;
+}
+.banner1 {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.banner1 .banner1img {
+    width: calc(100% * 5 / 6);
+    position: relative;
+    margin-left: auto;
+}
+
+.banner1 .banner1img img {
+    width: 100%;
+}
+.banner1 .text1{
+    font-size: 0;
+}
+.banner1 .text2 {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: #fff;
+}
+.banner1 .text2 .text2-1 , .text2-2{
+    font-size: 20px;
+} 
+.banner1 .text2 .text2-3{ 
+    font-size: 12px;
+}
+.banner2{
+    position: relative;
+}
+.banner2 .banner2img img{
+    width: 100%;
+}
+.banner2 .text .text1{
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.banner2 .text .text2{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+main{
+    padding-top: 20px;
+    width: 100%;
+}
+main .wrap{
+    padding: 20px;
+}
+main .wrap .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .wrap .btn button{
+    padding: 4px 8px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 100px;
+}
+main .wrap .mainimg{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+main .wrap .mainimg img{
+    width: 100%
+}
+main .wrap .mainimg .main3 , .main4 , .main5 , .main6{
+    display: none;
+}
+main .wrap .text1 , .text2{
+    font-size: 13px;
+}
+.salebanner{
+    margin: 20px 0;
+    position: relative;
+}
+.salebanner .wrap .background{
+    width: 100%;
+    height: 100px;
+    background-color: #C9002E;
+}
+.salebanner .wrap .text1{
+    font-size: 20px;
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.salebanner .wrap .text2{
+    font-size: 16px;
+    position: absolute;
+    top: 80%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.salebanner .wrap .text2 a{
+    display: flex;
+    gap: 20px;
+}
+.salebanner .wrap .text3{
+    display: none;
+}
+.salebanner .wrap .salebannerbtn{
+    display: none;
+}
+section .wrap{
+    margin: 0 20px;
+    padding-top: 30px;
+    border-left: 1px solid #C0C0C0;
+    border-right: 1px solid #C0C0C0;
+    
+}
+section .swiper-wrapper .secimg{
+    margin: 0 20px;
+}
+section .swiper-wrapper .secimg img{
+    width: 100%;
+}
+section .swiper-wrapper .sectext{
+    margin-left: 20px;
+}
+section .swiper-wrapper .sectext h3{
+    font-size: 25px
+}
+section .swiper-wrapper .sectext div{
+    font-size: 12px;
+}
+section .swiper-wrapper .seccon .con1{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+section .swiper-wrapper .seccon .con1 .context{
+    font-size: 14px;
+}
+section .swiper-wrapper .seccon .con1 .conimg{
+    margin: 10px 20px 10px 0;
+}
+section .swiper-wrapper .seccon .con1 .conimg img{
+    width: 100px;
+    height: 150px;
+}
+section .swiper-wrapper .seccon .con1 .conicon{
+    margin-left: auto;
+    border: none;
+}
+section .swiper-wrapper .seccon .con1 .conicon img{
+    width: 20px;
+}
+section .swiper-wrapper .seccon .con2{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+section .swiper-wrapper .seccon .con2 .context{
+    font-size: 14px;
+}
+section .swiper-wrapper .seccon .con2 .conimg{
+    margin: 0 20px 10px 0;
+}
+section .swiper-wrapper .seccon .con2 .conimg img{
+    width: 100px;
+    height: 150px;
+}
+section .swiper-wrapper .seccon .con2 .conicon{
+    margin-left: auto;
+    border: none;
+}
+section .swiper-wrapper .seccon .con2 .conicon img{
+    width: 20px;
+}
+footer .wrap{
+    margin-top: 20px;
+    width: 100%;
+    height: 230px;
+    background-color: #000;
+}
+footer .wrap h2{
+    width: 60px;
+    margin: 10px auto;
+    padding-top: 20px;
+}
+footer .wrap .text1{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+footer .wrap .text1 span{
+    font-weight: bold;
+}
+footer .wrap .icon{
+    width: 100px;
+    margin: 10px auto;
+}
+footer .wrap .text2{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}

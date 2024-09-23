@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="wrap">
+                <h1><a href="#"><img src="./images/H&M-Logo.png" alt="H&M 로고"></a></h1> 
+                <div class="menu"> 
+                    <button type="button">
+                        <img class="pc" src="./images/menu.svg" alt="메뉴 버튼">
+                        <img class="m" src="./images/menuwhite.png" alt="메뉴 버튼">
+                    </button>
+                </div>
+                <div class="util">
+                    <button class="search">Login</button>
+                    <button class="person">Mypage</button>
+                    <button class="shopping">Cart</button>
+                </div>
+                <nav>
+                    <div class="navheader">
+                        <div class="btn">
+                            <button class="close"><img src="./images/close@2x-100.jpg" alt="엑스표"></button>
+                        </div>
+                        <div class="logo">
+                            <a href="#"><img src="./images/H&M-Logo.png" alt="H&M 로고"></a>
+                        </div>
+                        <div class="search">
+                            <img src="./images/searchicon.png">
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+                    <ul class="gnb">
+                        <li class="menu"><a href="#">WOMEN</a>
+                            <ul class="submenu">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">TOP</a></li>
+                                <li><a href="#">SHIRT & BLOUSE</a></li>
+                                <li><a href="#">BOTTOM</a></li>
+                                <li><a href="#">DENIM</a></li>
+                                <li><a href="#">SKIRT</a></li>
+                                <li><a href="#">DRESS</a></li>
+                                <li><a href="#">SWIMWEAR</a></li>
+                                <li><a href="#">ACC</a></li>
+                                <li><a href="#">SHOSE</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">MEN</a>
+                            <ul class="submenu">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">TOP</a></li>
+                                <li><a href="#">SHIRT</a></li>
+                                <li><a href="#">BOTTOM</a></li>
+                                <li><a href="#">DENIM</a></li>
+                                <li><a href="#">SWIMWEAR</a></li>
+                                <li><a href="#">ACC</a></li>
+                                <li><a href="#">SHOSE</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">KIDS</a>
+                            <ul class="submenu">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">TOP</a></li>
+                                <li><a href="#">BOTTOM</a></li>
+                                <li><a href="#">DENIM</a></li>
+                                <li><a href="#">SKIRT & DRESS</a></li>
+                                <li><a href="#">SWIMWEAR</a></li>
+                                <li><a href="#">ACC</a></li>
+                                <li><a href="#">SHOSE</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">BABY</a>
+                            <ul class="submenu">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">TOP</a></li>
+                                <li><a href="#">BOTTOM</a></li>
+                                <li><a href="#">SWIMWEAR</a></li>
+                                <li><a href="#">ACC</a></li>
+                                <li><a href="#">SHOSE</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">SPORTS</a>
+                            <ul class="submenu">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">TOP</a></li>
+                                <li><a href="#">BOTTOM</a></li>
+                                <li><a href="#">ACC</a></li>
+                                <li><a href="#">SHOSE</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">HOME</a>
+                            <ul class="submenu">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">장식</a></li>
+                                <li><a href="#">식기</a></li>
+                                <li><a href="#">침구세트</a></li>
+                                <li><a href="#">욕실용품</a></li>
+                                <li><a href="#">수납장</a></li>
+                                <li><a href="#">쿠션</a></li>
+                                <li><a href="#">잠옷</a></li>
+                                <li><a href="#">러그</a></li>
+                                <li><a href="#">커튼</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="#">지속가능성</a>
+                            <ul class="submenu">
+                                <li><a href="#">Let’s innovate</a></li>
+                                <li><a href="#">Let's be fair</a></li>
+                                <li><a href="#">Let's be for all</a></li>
+                                <li><a href="#">Let's be transparent</a></li>
+                                <li><a href="#">Let's clean up</a></li>
+                                <li><a href="#">Let’s close the loop</a></li>
+                                <li><a href="#">회원만을 위한 혜택</a></li>
+                            </ul>
+                        </li>
+                        <li class="util">
+                            <div><a href="#">고객 서비스</a></div>
+                            <div><a href="#">뉴스레터</a></div>
+                            <div><a href="#">매장찾기</a></div>
+                        </li>
+                    </ul>
+                    <div class="navimg">
+                        <div><img src=""></div>
+                    </div>
+                </nav>
+            </div> 
+        </header>
+        <div class="slide">
+            <div class="wrap">
+                <div class="text"><a href="#">NEW ARRIVERS</a></div>
+                <div class="swiper mainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/slide1@2x-100.jpg" alt="H&M 여성복 이미지1"></div>
+                        <div class="swiper-slide"><img src="./images/slide2@2x-100.jpg" alt="H&M 여성복 이미지2"></div>
+                        <div class="swiper-slide"><img src="./images/slide3@2x-100.jpg" alt="H&M 여성복 이미지3"></div>
+                        <div class="swiper-slide"><img src="./images/slide4@2x-100.jpg" alt="H&M 여성복 이미지4"></div>
+                    </div>
+                </div>
+                <div class="desktext">
+                    Refresh your daily look with<br/>
+                    H&M's women's clothing.<br/>
+                    With all the latest styles in one place,<br/>
+                    you can find basic women's clothing for daily wear<br/>
+                    i ncluding women's tops and skirts, essential knitwear,<br/> 
+                    and cozy loungewear for relaxing moments.
+                </div>
+                <div class="slidetext">
+                    <a href="#">
+                    <div class="slidetext1">H&M NEW ARRIVERS</div>
+                    <div class="slidetext2">SHOP NOW</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner1">
+            <div class="wrap">
+                <div class="text1">
+                    Plans to go out? Our women's dresses line up mini,<br>
+                    midi and maxi styles that were made for summer evenings,<br>
+                    while our stylish jeans and trousers offer something to flatter every silhouette.<br> 
+                    Solve your wardrobe woes on busy days with cool co-ords,<br> 
+                    and wrap up to stay warm in our women's jackets and coats when extra layers are required.<br> 
+                    Finish off your favourite new looks with an array of trendy accessories,<br> 
+                    and don’t forget to scroll for statement footwear in our women's shoes range
+                </div>
+                <div class="banner1img">
+                    <a href="#"><img src="./images/banner1@2x-100.jpg" alt="H&M 2024 summer 이미지"></a>
+                    <div class="text2">
+                        <a href="#">
+                            <div class="text2-1">summer 2024</div>
+                            <div class="text2-2">Women's Clothing</div>
+                            <div class="text2-3">SHOP NOW</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner2">
+            <div class="banner2img">
+                <a href="#">
+                    <img class="pc" src="./images/banner2_desktop@2x-100.jpg" alt="H&M swimwear 이미지">
+                    <img class="pc" src="./images/banner3_desktop@2x-100.jpg" alt="H&M swimwear 이미지">
+                    <img class="pc" src="./images/banner4_desktop@2x-100.jpg" alt="H&M swimwear 이미지">
+                    <img class="m tab" src="./images/banner2_mobile@2x-100.jpg" alt="H&M swimwear 이미지">
+                </a>
+            </div>
+            <div class="text">
+                <div class="text1"><a href="#">SWIMWEAR&BEACHWEAR</a></div>
+                <div class="text2"><a href="#">SHOP NOW</a></div>
+            </div>
+        </div>
+        <main>
+            <div class="wrap">
+                <div class="btn">
+                    <button type="button">Women</button>
+                    <button type="button">Men</button>
+                    <button type="button">Kids</button>
+                    <button type="button">Baby</button>
+                    <button type="button">Home</button>
+                </div>
+                <div class="mainimg">
+                        <div class="main1">
+                            <a href="#">
+                                <div class="main1img">
+                                    <img src="./images/mainwomen1.jpeg" alt="H&M women 이미지">
+                                </div>
+                                <div class="text">
+                                        <div class="text1">Studded crop top</div>
+                                        <div class="text2">₩ 39,900</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main2">
+                            <a href="#">
+                                <div class="main2img">
+                                    <img src="./images/mainwomen2.jpeg" alt="H&M women 이미지">
+                                </div>
+                                <div class="text">
+                                    <div class="text1">Wide coated joggers</a></div>
+                                    <div class="text2">₩ 29,900</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main3">
+                            <a href="#">
+                                <div class="main3img">
+                                    <img src="./images/mainwomen3.jpeg" alt="H&M women 이미지">
+                                </div>
+                                <div class="text">
+                                    <div class="text1">Shirring off-shoulder bodysuit</a></div>
+                                    <div class="text2">₩ 14,900</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main4">
+                            <a href="#">
+                                <div class="main4img">
+                                    <img src="./images/mainwomen4.jpeg" alt="H&M women 이미지">
+                                </div>
+                                <div class="text">
+                                    <div class="text1">Viscose Blend Suit Vest</a></div>
+                                    <div class="text2">₩ 39,900</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main5">
+                            <a href="#">
+                                <div class="main5img">
+                                    <img src="./images/mainwomen5.jpeg" alt="H&M women 이미지">
+                                </div>
+                                <div class="text">
+                                    <div class="text1">Low back halter neck dress</a></div>
+                                    <div class="text2">₩ 49,900</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="main6">
+                            <a href="#">
+                                <div class="main6img">
+                                    <img src="./images/mainwomen6.jpeg" alt="H&M women 이미지">
+                                </div>
+                                <div class="text">
+                                    <div class="text1">Embellished sleeveless dress</a></div>
+                                    <div class="text2">₩ 69,900</div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="mainimg">
+                    <div class="main1">
+                        <a href="#">
+                            <div class="main1img">
+                                <img src="./images/main1@2x-100.jpg" alt="H&M men 이미지">
+                            </div>
+                            <div class="text">
+                                    <div class="text1">Relaxed Fit Linen resort shirt</div>
+                                    <div class="text2">₩ 39,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main2">
+                        <a href="#">
+                            <div class="main2img">
+                                <img src="./images/main2@2x-100.jpg" alt="H&M men 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Regular Fit Linen-blend trousers</a></div>
+                                <div class="text2">₩ 39,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main3">
+                        <a href="#">
+                            <div class="main3img">
+                                <img src="./images/main3@2x-100.jpg" alt="H&M men 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Regular Fit Hole-patterned polo shirt</a></div>
+                                <div class="text2">₩ 39,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main4">
+                        <a href="#">
+                            <div class="main4img">
+                                <img src="./images/main4@2x-100.jpg" alt="H&M men 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Regular fit ribbed polo shirt</a></div>
+                                <div class="text2">₩ 39,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main5">
+                        <a href="#">
+                            <div class="main5img">
+                                <img src="./images/main5@2x-100.jpg" alt="H&M men 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Regular Fit Linen-blend resort shirt</a></div>
+                                <div class="text2">₩ 39,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main6">
+                        <a href="#">
+                            <div class="main6img">
+                                <img src="./images/main6@2x-100.jpg" alt="H&M men 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Regular Fit Suit trousers</a></div>
+                                <div class="text2">₩ 39,900</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mainimg">
+                    <div class="main1">
+                        <a href="#">
+                            <div class="main1img">
+                                <img src="./images/mainkids1.avif" alt="H&M Kids 이미지">
+                            </div>
+                            <div class="text">
+                                    <div class="text1">Printed T-shirt</div>
+                                    <div class="text2">₩ 14,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main2">
+                        <a href="#">
+                            <div class="main2img">
+                                <img src="./images/mainkids2.avif" alt="H&M Kids 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Cargo Jogger Pants</a></div>
+                                <div class="text2">₩ 19,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main3">
+                        <a href="#">
+                            <div class="main3img">
+                                <img src="./images/mainkids3.avif" alt="H&M Kids 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Printed T-shirt</a></div>
+                                <div class="text2">₩ 14,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main4">
+                        <a href="#">
+                            <div class="main4img">
+                                <img src="./images/mainkids4.avif" alt="H&M Kids 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Balloon-sleeved tulle dress</a></div>
+                                <div class="text2">₩ 24,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main5">
+                        <a href="#">
+                            <div class="main5img">
+                                <img src="./images/mainkids5.avif" alt="H&M Kids 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Bubble hem skirt</a></div>
+                                <div class="text2">₩ 14,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main6">
+                        <a href="#">
+                            <div class="main6img">
+                                <img src="./images/mainkids6.avif" alt="H&M Kids 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Flare leg jeans</a></div>
+                                <div class="text2">₩ 24,900</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mainimg">
+                    <div class="main1">
+                        <a href="#">
+                            <div class="main1img">
+                                <img src="./images/mainbaby1.jpeg" alt="H&M Baby 이미지">
+                            </div>
+                            <div class="text">
+                                    <div class="text1">Long sleeve bodysuit</div>
+                                    <div class="text2">₩ 7,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main2">
+                        <a href="#">
+                            <div class="main2img">
+                                <img src="./images/mainbaby2.jpeg" alt="H&M Baby 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Ribbed Cotton 3 Piece Set</a></div>
+                                <div class="text2">₩ 19,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main3">
+                        <a href="#">
+                            <div class="main3img">
+                                <img src="./images/mainbaby3.jpeg" alt="H&M Baby 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Ribbon Detail Organza Dress</a></div>
+                                <div class="text2">₩ 34,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main4">
+                        <a href="#">
+                            <div class="main4img">
+                                <img src="./images/mainbaby4.jpeg" alt="H&M Baby 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Cotton Jersey T-Shirt</a></div>
+                                <div class="text2">₩ 5,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main5">
+                        <a href="#">
+                            <div class="main5img">
+                                <img src="./images/mainbaby5.jpeg" alt="H&M Baby 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Cotton Jersey T-Shirt</a></div>
+                                <div class="text2">₩ 5,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main6">
+                        <a href="#">
+                            <div class="main6img">
+                                <img src="./images/mainbaby6.jpeg" alt="H&M Baby 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Long sleeve bodysuit</a></div>
+                                <div class="text2">₩ 7,900</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mainimg">
+                    <div class="main1">
+                        <a href="#">
+                            <div class="main1img">
+                                <img src="./images/mainhome1.avif" alt="H&M Home 이미지">
+                            </div>
+                            <div class="text">
+                                    <div class="text1">Tassel Blanket</div>
+                                    <div class="text2">₩ 45,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main2">
+                        <a href="#">
+                            <div class="main2img">
+                                <img src="./images/mainhome2.avif" alt="H&M Home 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Small stoneware vase</a></div>
+                                <div class="text2">₩ 9,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main3">
+                        <a href="#">
+                            <div class="main3img">
+                                <img src="./images/mainhome3.avif" alt="H&M Home 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Fringe Velvet Cushion Cover</a></div>
+                                <div class="text2">₩ 29,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main4">
+                        <a href="#">
+                            <div class="main4img">
+                                <img src="./images/mainhome4.avif" alt="H&M Home 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Small stoneware vase</a></div>
+                                <div class="text2">₩ 9,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main5">
+                        <a href="#">
+                            <div class="main5img">
+                                <img src="./images/mainhome5.avif" alt="H&M Home 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">2 piece glass set</a></div>
+                                <div class="text2">₩ 14,900</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main6">
+                        <a href="#">
+                            <div class="main6img">
+                                <img src="./images/mainhome6.avif" alt="H&M Home 이미지">
+                            </div>
+                            <div class="text">
+                                <div class="text1">Wall Art</a></div>
+                                <div class="text2">₩ 59,900</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+             </div> 
+        </main>
+        <div class="salebanner">
+            <div class="wrap">
+                <div class="background"></div>
+                <div class="text1">
+                    <a href="#">
+                        <div>회원먼저</div>
+                        <div>최대 50% 할인</div>
+                    </a>
+                </div>
+                <div class="text2">
+                    <a href="#">
+                        <div>바로가기</div>
+                        <div>회원가입</div>
+                    </a>
+                </div>
+                <div class="text3"><a href="#">회원에게 드리는 우선 쇼핑 혜택</a></div>
+                <div class="salebannerbtn">
+                    <button type="button">Women</button>
+                    <button type="button">Men</button>
+                    <button type="button">Kids</button>
+                    <button type="button">Baby</button>
+                    <button type="button">Home</button>
+                </div>
+            </div>
+        </div>  
+        <section>
+            <div class="wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="secimg"><a href="#"><img src="./images/sec1@2x-100.jpg" alt="H&M coolmax 이미지"></a></div>
+                            <div class="sectext">
+                                <h3><a href="#">COOLMAX®</a></h3>
+                                <div>우수한 통기성과 내구성을 갖춘 COOLMAX® 기능성 원단으로<br> 
+                                    편안하고 쾌적한 착용감을 경험하세요.<br> 
+                                    더운 날씨에 활동해도 언제나 쾌적함을 유지해 주는 티셔츠, 탱크,<br>  
+                                    폴로, 양말, 쇼츠 등 다양한 COOLMAX® 아이템을 지금 살펴보세요.
+                                </div>
+                            </div>
+                            <div class="seccon">
+                                <div class="con1">
+                                    <div class="conimg"><a href="#"><img src="./images/sec1_1@2x-100.jpg"></a></div>
+                                    <div class="context">
+                                        <a href="#">
+                                            <div class="context1">COOLMAX® 스트랩 탑</div>
+                                            <div class="context2">₩14,900</div>
+                                        </a>
+                                    </div>
+                                    <button class="conicon"><img src="./images/hearticon@2x-100.jpg"></button> 
+                                </div>
+                                <div class="con2">
+                                    <div class="conimg"><a href="#"><img src="./images/sec1_2@2x-100.jpg"></a></div>
+                                    <div class="context">
+                                        <a href="#">
+                                            <div class="context1">COOLMAX® 레귤러핏 티셔츠</div>
+                                            <div class="context2">₩17,900</div>
+                                        </a>
+                                    </div>
+                                    <button class="conicon"><img src="./images/hearticon@2x-100.jpg"></button> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="secimg"><a href="#"><img src="./images/sec2@2x-100.jpg" alt="H&M coolmax 이미지"></a></div>
+                            <div class="sectext">
+                                <h3><a href="#">H&M HOME</a></h3>
+                                <div>
+                                    H&M의 홈 데코 제품으로 더욱 세련된 인테리어를 연출해 보세요. <br>
+                                    새집으로 이사했거나 기존의 생활 공간을 새로운 느낌으로 바꾸고 싶다면,<br>
+                                    H&M 컬렉션에 집의 모든 공간에 필요한 제품이 준비되어 있습니다.
+                                </div>
+                            </div>
+                            <div class="seccon">
+                                <div class="con1">
+                                    <div class="conimg"><a href="#"><img src="./images/sec2_1@2x-100.jpg"></a></div>
+                                    <div class="context">
+                                        <a href="#">
+                                            <div class="context1">퀼티드 새틴 쿠션 커버</div>
+                                            <div class="context2">₩29,900</div>
+                                        </a>
+                                    </div>
+                                    <button class="conicon"><img src="./images/hearticon@2x-100.jpg"></button> 
+                                </div>
+                                <div class="con2">
+                                    <div class="conimg"><a href="#"><img src="./images/sec2-2@2x-100.jpg"></a></div>
+                                    <div class="context">
+                                        <a href="#">
+                                            <div class="context1">스톤웨어 화분</div>
+                                            <div class="context2">₩29,900</div>
+                                        </a>
+                                    </div>
+                                    <button class="conicon"><img src="./images/hearticon@2x-100.jpg"></button> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="secimg"><a href="#"><img src="./images/sec3@2x-100.jpg" alt="H&M coolmax 이미지"></a></div>
+                            <div class="sectext">
+                                <h3><a href="#">H&M Move</a></h3>
+                                <div>
+                                    H&M Move 남성 스포츠 베스트로 액티브웨어를 업그레이드하세요.<br>
+                                    리프팅 시 몸매를 과시하기 좋은 슬리브리스 베스트부터 수분 흡수력이 좋은 소재로<br>
+                                    제작된 루즈 핏의 러닝 베스트까지 다양한 아이템을 만나보세요. 
+                                </div>
+                            </div>
+                            <div class="seccon">
+                                <div class="con1">
+                                    <div class="conimg"><a href="#"><img src="./images/sec3-1@2x-100.jpg"></a></div>
+                                    <div class="context">
+                                        <a href="#">
+                                            <div class="context1">DryMove™ 슬리브리스 스포츠 탑</div>
+                                            <div class="context2">₩14,900</div>
+                                        </a>
+                                    </div>
+                                    <button class="conicon"><img src="./images/hearticon@2x-100.jpg"></button> 
+                                </div>
+                                <div class="con2">
+                                    <div class="conimg"><a href="#"><img src="./images/sec3-2@2x-100.jpg"></a></div>
+                                    <div class="context">
+                                        <a href="#">
+                                            <div class="context1">DryMove™ 슬리브리스 스포츠 탑</div>
+                                            <div class="context2">₩17,900</div>
+                                        </a>
+                                    </div>
+                                    <button class="conicon"><img src="./images/hearticon@2x-100.jpg"></button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrap">
+                <h2><a href="#"><img src="./images/footerlogo.svg"></a></h2>
+                <div class="text1">
+                    <div class="text1-1">
+                        <div><span>법인명</span> 에이치앤엠헤네스앤모리츠 주식회사</div>
+                        <div><span>통신판매업신고번호</span> 2022-서울강남-01184</div>
+                        <div><span>사업자등록번호</span> 220-87-83339 | 아담 칼슨, 선 보라미, 아네타 포쿠친스카</div>
+                    </div>
+                    <div class="text1-2">
+                        <div>서울특별시 강남구 영동대로 421, 9층 삼탄빌딩 (대치동) 06182</div>
+                        <div><span>대표번호</span> 080-822-0220 | info.kr@hm.com</div>
+                    </div>
+                </div>
+                <div class="icon"><a href="#"><img src="./images/footericon.svg"></a></div>
+                <div class="text2">
+                    <div>이 사이트의 콘텐츠는 저작권 보호를 받고 있는</div>
+                    <div>H & M Hennes & Mauritz AB의 자산입니다. </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>  

@@ -1,0 +1,243 @@
+@media (min-width: 1200px){
+    .pc{display: block;}
+    .tab{display: none;}
+    .m{display: none;}
+
+
+    header{
+        position: relative;
+        z-index: 10;
+    }
+    header .wrap{
+        padding: 20px;
+    }
+    header .wrap .util button{
+        font-size: 16px;
+    }
+    header .wrap nav .navheader .btn{
+        width: 10%;
+    }
+    header .wrap nav .navheader .logo{
+        width: 70%;
+    }
+    header .wrap nav .navheader .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 20%;
+    }
+    header .wrap nav .navheader .search img{
+        width: 20px;
+    }
+    header .wrap nav .navheader .search input{
+        width: 70%;
+        border: none;
+        border-bottom:1px solid #bbb;
+    }
+    header .wrap nav .gnb .menu .submenu{
+        width: 300px;
+    }
+    header .wrap nav .gnb .util{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0 20px;
+        text-align: right;
+    }
+    header .wrap nav .gnb .util div a{
+        font-size: 20px;
+        padding: 0;
+    }
+    header .wrap nav .navimg{
+        position: absolute;
+        top: 60%;
+        right: 0;
+        transform: translate(0, -50%);
+    }
+    header .wrap nav .navimg div img{
+        width: 600px;
+    }
+    .slide{
+        width: 50%;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+     }
+     .slide .wrap .mainSwiper .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .slide .wrap .mainSwiper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    .slide .wrap .text{
+        font-size: 25px;
+    }
+    .slide .wrap .desktext{
+        font-size: 20px;
+    }
+    .slide .wrap .slidetext{
+        display: none;
+    }
+    .banner1 .wrap{
+        margin: 100px 0 ;
+    }
+    .banner1 .banner1img {
+        width: calc(100% * 5 / 12);
+        position: relative;
+        margin-left: auto;
+    }
+    .banner1 .text1{
+        font-size: 16px;
+        position: absolute;
+        top: 30%;
+        left: 10px;
+    }
+    .banner1 .text2 {
+        position: absolute;
+        bottom: 20px;
+        left: -65%;
+        color: #000;
+        font-weight: bold;
+    }
+    .banner1 .text2 .text2-1 , .text2-2{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+    }
+    .banner1 .text2 .text2-3{
+        display: none;
+    }
+    .banner2{
+        margin-bottom: 100px;
+    }
+    .banner2 .banner2img{
+        width: calc(100% * 3 / 12);
+        margin-left: auto;
+    }
+    .banner2 .banner2img a{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner2 .banner2img img{
+        width: 100%;
+    }
+    .banner2 .text .text1{
+        color: #000;
+        /* text-transform: capitalize; */
+        /* text-decoration: ; */
+        /* text-rendering: ; */
+        /* position: unset; */
+        left: calc(25% - 20px);
+        transform: translate(0,0) rotate(-90deg);
+        transform-origin: left bottom;
+    }
+    .banner2 .text .text2{
+        display: none;
+    }
+    main{
+        padding: 40px;
+    }
+    main .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: unset;
+    }
+    main .wrap .btn{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    main .wrap .btn button{
+        padding: 4px 8px;
+        font-size: 25px;
+        border: 2px solid #000;
+        border-radius: 100px;
+    }
+    main .wrap .mainimg{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    main .wrap .mainimg .main3 , .main4 , .main5 , .main6{
+        display: block;
+    }
+    main .wrap .text1 , .text2{
+        font-size: 20px;
+    }
+    .salebanner .wrap .background{
+        width: 100%;
+        height: 300px;
+        background-color: #C9002E;
+    }
+    .salebanner .wrap .text1{
+        font-size: 30px;
+        position: absolute;
+        top: 30%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+    }
+    .salebanner .wrap .text2{
+        display: none;
+    }
+    .salebanner .wrap .text3{
+        display: block;
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+    }
+    .salebanner .wrap .salebannerbtn{
+        display: flex;
+        position: absolute;
+        bottom: 20%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        gap: 20px;
+    }
+    .salebanner .wrap .salebannerbtn button{
+        padding: 4px 8px;
+        font-size: 16px;
+        border: 2px solid #fff;
+        border-radius: 100px;
+    }
+    section{
+        padding: 40px;
+    }
+    section .wrap{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+    section .wrap .sec2 , .sec3{
+        display: block;
+    }
+    footer .wrap .text1 .text1-1{
+        display: flex;
+        justify-content: center;
+    }
+    footer .wrap .text1 .text1-2{
+        display: flex;
+        justify-content: center;
+    }
+    footer .wrap .icon{
+        width: 200px;
+        margin: 20px auto;
+    }
+    footer .wrap .text2{
+        display: flex;
+        justify-content: center;
+    }
+}
